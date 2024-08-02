@@ -1,4 +1,4 @@
-import { WALLETS, ACCOUNTS } from "../config";
+import { WALLETS, ACCOUNTS, RPC_ENDPOINT } from "../config";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {
   createMetadataAccountV3,
@@ -22,7 +22,7 @@ import { irysUploader } from "@metaplex-foundation/umi-uploader-irys";
 const mint = publicKey(ACCOUNTS.MINT);
 
 // Create a UMI connection
-const umi = createUmi("https://api.devnet.solana.com");
+const umi = createUmi(RPC_ENDPOINT);
 
 let keypair = umi.eddsa.createKeypairFromSecretKey(
   new Uint8Array(WALLETS.WBA_WALLET),

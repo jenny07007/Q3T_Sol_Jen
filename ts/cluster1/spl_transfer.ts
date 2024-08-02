@@ -7,14 +7,14 @@ import {
 } from "@solana/web3.js";
 
 import { getOrCreateAssociatedTokenAccount, transfer } from "@solana/spl-token";
-import { ACCOUNTS, WALLETS } from "../config";
+import { ACCOUNTS, WALLETS, RPC_ENDPOINT } from "../config";
 
 // We're going to import our keypair from the wallet file
 const keypair = Keypair.fromSecretKey(new Uint8Array(WALLETS.WBA_WALLET));
 
 //Create a Solana devnet connection
 const commitment: Commitment = "confirmed";
-const connection = new Connection("https://api.devnet.solana.com", commitment);
+const connection = new Connection(RPC_ENDPOINT, commitment);
 
 // Mint address
 const mint = new PublicKey(ACCOUNTS.MINT);

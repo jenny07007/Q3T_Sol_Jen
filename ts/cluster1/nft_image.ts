@@ -1,30 +1,39 @@
-import wallet from "../wba-wallet.json"
-import { createUmi } from "@metaplex-foundation/umi-bundle-defaults"
-import { createGenericFile, createSignerFromKeypair, signerIdentity } from "@metaplex-foundation/umi"
-import { irysUploader } from "@metaplex-foundation/umi-uploader-irys"
-import { readFile } from "fs/promises"
+import path from "path";
+import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
+import {
+  createGenericFile,
+  createSignerFromKeypair,
+  signerIdentity,
+} from "@metaplex-foundation/umi";
+import { irysUploader } from "@metaplex-foundation/umi-uploader-irys";
+import { readFile } from "fs/promises";
+import { WALLETS, RPC_ENDPOINT } from "../config";
 
 // Create a devnet connection
-const umi = createUmi('https://api.devnet.solana.com');
+const umi = createUmi(RPC_ENDPOINT);
 
-let keypair = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(wallet));
+let keypair = umi.eddsa.createKeypairFromSecretKey(
+  new Uint8Array(WALLETS.WBA_WALLET),
+);
 const signer = createSignerFromKeypair(umi, keypair);
 
 umi.use(irysUploader());
 umi.use(signerIdentity(signer));
 
 (async () => {
-    try {
-        //1. Load image
-        //2. Convert image to generic file.
-        //3. Upload image
+  try {
+    const image = await readFile(path.join(__dirname, "./images/generug.png"));
 
-        // const image = ???
+    const genericFile = createGenericFile(image, "generug.png", {
+      contentType: "image/png",
+    });
 
-        // const [myUri] = ??? 
-        // console.log("Your image URI: ", myUri);
-    }
-    catch(error) {
-        console.log("Oops.. Something went wrong", error);
-    }
+    console.log("Uploading image...");
+
+    const [imageURI] = await umi.uploader.upload([genericFile]);
+
+    console.log("Your image URI: ", imageURI);
+  } catch (error) {
+    console.log("Oops.. Something went wrong", error);
+  }
 })();

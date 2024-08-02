@@ -54,6 +54,8 @@ export const ACCOUNTS = {
   MINT: "",
 };
 
+export const RPC_ENDPOINT = "https://api.devnet.solana.com";
+
 export const WALLETS = {
   WBA_WALLET: wba_wallet,
   DEV_WALLET: dev_wallet,
@@ -105,3 +107,8 @@ yarn spl_init
   - Update metadata: [View transaction details](https://explorer.solana.com/tx/QwVyXnUCwfAU8qGuix4ykELVW8nSXC1gQHZCUC55ig2pXxJ4cDWFwt8vCdemzvr6fEZjDdT46yPpVQRpJz6C74K?cluster=devnet)
 
 - [spl-transfer](ts/cluster1/spl_transfer.ts) : [View transaction details](https://explorer.solana.com/tx/5GnRX2PcUamgKNxbv9yGVDrJFGsTsPgNPkczdQo2bhtTaogxDZGx7wWAnTRxE7Sif4VuxbcYfFeodB8KHU4brM8u?cluster=devnet)
+
+- [nft_mint](ts/cluster1/nft_mint.ts) - Mint an RUG NFT using [umi](https://developers.metaplex.com/umi):
+  1. Generate image: [nft_image.ts](ts/cluster1/nft_image.ts)
+  2. Create metadata: [nft_metadata.ts](ts/cluster1/nft_metadata.ts)
+  3. Mint NFT: [View transaction](https://explorer.solana.com/tx/4uLPYrU6cbc48wGiXgE35BwZ7bji2RLx5RPbAM3VAiEJ39RnLoZWjmd4B2ENoB8wEVsY268PVvLKPmSan4ELoxej?cluster=devnet)

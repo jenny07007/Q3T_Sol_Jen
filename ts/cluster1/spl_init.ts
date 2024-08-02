@@ -1,13 +1,13 @@
 import { Keypair, Connection, Commitment } from "@solana/web3.js";
 import { createMint } from "@solana/spl-token";
-import { WALLETS } from "../config";
+import { WALLETS, RPC_ENDPOINT } from "../config";
 
 // Import our keypair from the wallet file
 const keypair = Keypair.fromSecretKey(new Uint8Array(WALLETS.WBA_WALLET));
 
 //Create a Solana devnet connection
 const commitment: Commitment = "confirmed";
-const connection = new Connection("https://api.devnet.solana.com", commitment);
+const connection = new Connection(RPC_ENDPOINT, commitment);
 
 (async () => {
   try {

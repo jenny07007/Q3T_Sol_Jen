@@ -100,7 +100,8 @@ yarn spl_init
   [View transaction details](https://explorer.solana.com/tx/4unWMEyBbcFGRbSTbaRANvafif1nEhxCWhEzzsU2MT5eLorTukrUH2JqCVGtAVrxBVz7f4Z1PKiCjcKb4qy9kePd?cluster=devnet)
 
 - [spl-metadata](ts/cluster1/spl_metadata.ts)
-  [View transaction details](https://explorer.solana.com/tx/4eLQXcp8ko9t9pYyC94amWrSj4qgJ1EjnuLJRZCgniJcKxeDTP5phjAKm3GTLZM36bryoSetVQXThmeFuiEtSXiH?cluster=devnet)
 
-- [spl-transfer](ts/cluster1/spl_transfer.ts)
-  [View transaction details](https://explorer.solana.com/tx/5GnRX2PcUamgKNxbv9yGVDrJFGsTsPgNPkczdQo2bhtTaogxDZGx7wWAnTRxE7Sif4VuxbcYfFeodB8KHU4brM8u?cluster=devnet)
+  - Create metadata: [View transaction details](https://explorer.solana.com/tx/4eLQXcp8ko9t9pYyC94amWrSj4qgJ1EjnuLJRZCgniJcKxeDTP5phjAKm3GTLZM36bryoSetVQXThmeFuiEtSXiH?cluster=devnet)
+  - Update metadata: [View transaction details](https://explorer.solana.com/tx/QwVyXnUCwfAU8qGuix4ykELVW8nSXC1gQHZCUC55ig2pXxJ4cDWFwt8vCdemzvr6fEZjDdT46yPpVQRpJz6C74K?cluster=devnet)
+
+- [spl-transfer](ts/cluster1/spl_transfer.ts) : [View transaction details](https://explorer.solana.com/tx/5GnRX2PcUamgKNxbv9yGVDrJFGsTsPgNPkczdQo2bhtTaogxDZGx7wWAnTRxE7Sif4VuxbcYfFeodB8KHU4brM8u?cluster=devnet)

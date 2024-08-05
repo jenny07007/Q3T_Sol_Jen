@@ -3,8 +3,8 @@
 # WBA-Turbin3-SOLANA Cohort
 
 - [WBA-Turbin3-SOLANA Cohort](#wba-turbin3-solana-cohort)
-    - [TypeScript PreReq](#typescript-prereq)
-    - [Rust Registration](#rust-registration)
+  - [TypeScript PreReq](#typescript-prereq)
+  - [Rust Registration](#rust-registration)
   - [🕖 Week-0](#-week-0)
     - [Prerequisites](#prerequisites)
     - [Customize Configuration](#customize-configuration)
@@ -109,6 +109,10 @@ yarn spl_init
 - [spl-transfer](ts/cluster1/spl_transfer.ts) : [View transaction details](https://explorer.solana.com/tx/5GnRX2PcUamgKNxbv9yGVDrJFGsTsPgNPkczdQo2bhtTaogxDZGx7wWAnTRxE7Sif4VuxbcYfFeodB8KHU4brM8u?cluster=devnet)
 
 - [nft_mint](ts/cluster1/nft_mint.ts) - Mint an RUG NFT using [umi](https://developers.metaplex.com/umi):
+
   1. Generate image: [nft_image.ts](ts/cluster1/nft_image.ts)
   2. Create metadata: [nft_metadata.ts](ts/cluster1/nft_metadata.ts)
   3. Mint NFT: [View transaction](https://explorer.solana.com/tx/4uLPYrU6cbc48wGiXgE35BwZ7bji2RLx5RPbAM3VAiEJ39RnLoZWjmd4B2ENoB8wEVsY268PVvLKPmSan4ELoxej?cluster=devnet)
+
+- [🦾 Challenge](challenges/rug-blinks/app/api/action/route.ts)
+  - [README](challenges/rug-blinks/README.md)

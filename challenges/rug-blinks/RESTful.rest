@@ -1,0 +1,10 @@
+### 
+GET http://localhost:3000/api/action
+
+
+###
+POST http://localhost:3000/api/action?amount=3
+
+{
+	"account": "Ez99Jx1QN1moUDwMkQwLHww2xewVpWCXR2xgRAUkxGcE"
+}

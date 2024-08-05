@@ -1,0 +1,8 @@
+{
+  "rules": [
+    {
+      "pathPattern": "/api/action/**",
+      "apiPath": "/api/action/**"
+    }
+  ]
+}

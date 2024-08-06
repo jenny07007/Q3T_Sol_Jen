@@ -7,14 +7,12 @@
 
 ### Links
 
-- **Testing Platform**: [Dial.to](https://dial.to/)
-- **Transaction Details**: [View on Solana Explorer](https://explorer.solana.com/tx/3z1GtdaYz3QE33wBtsbC4428dvQZpLrgFdFCf4nY2jhC8PEWw6pmWL6CXc5UzSv26ip6CQA7L3jAj1hvEKFc2myL?cluster=devnet)
+- **Dial Devnet Testing Platform**: [Dial.to](https://dial.to/devnet)
+- **Transaction Details**: [View on Solana Explorer](https://explorer.solana.com/tx/2LoSvbTTF7Ht6S4dVZGVBswCZvRfH1iagEPKBcFKDnXQ3gB5TjUaepcvtKP4nSxYGPoKkVDfd1XxToVsVGX2Nmv1?cluster=devnet)
 
 <div align="center">
-	<img src="rug-blink.png" width="300px" alt="RUG NFT"/>
+	<img src="rug-blink.png" height="434px" alt="RUG NFT"/>
+	<img src="success.png" height="434px" alt="Success"/>
 	<img src="mint.png" width="300px" alt="Minting Process"/>
 </div>
-
-## Known Issue
-
-While the NFT is minted and SOL is transferred successfully, the client-side transaction confirmation indicating a bug in the code.As a result, the UI does not display a success message. This will be addressed in future updates.
+****

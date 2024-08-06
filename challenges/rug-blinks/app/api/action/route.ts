@@ -11,7 +11,6 @@ import {
   Instruction,
   transactionBuilder,
   sol,
-  createSignerFromKeypair,
 } from "@metaplex-foundation/umi";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {
@@ -31,14 +30,11 @@ import {
   TransactionMessage,
   VersionedTransaction,
   Keypair,
-  Connection,
-  clusterApiUrl,
 } from "@solana/web3.js";
 import dev_wallet from "../../../dev-wallet.json";
 import { transferSol, mplToolbox } from "@metaplex-foundation/mpl-toolbox";
 import { ErrorMessage } from "@/utils/verifyAmount";
 import { uploadImageAndCreateMetadata } from "@/utils/uploadImageAndCreateMetadata";
-import signer_wallet from "../../../signer-wallet.json";
 
 export const GET = async (request: Request) => {
   try {
@@ -137,7 +133,6 @@ export const POST = async (request: Request) => {
       );
 
     const blockhash = (await umi.rpc.getLatestBlockhash()).blockhash;
-    txBuilder.setBlockhash(blockhash);
 
     // Convert Umi instructions to web3.js instructions
     const nftMintInstructions: Instruction[] = txBuilder.getInstructions();

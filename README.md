@@ -3,16 +3,16 @@
 # WBA-Turbin3-SOLANA Cohort
 
 - [WBA-Turbin3-SOLANA Cohort](#wba-turbin3-solana-cohort)
-    - [TypeScript PreReq](#typescript-prereq)
-    - [Rust Registration](#rust-registration)
+  - [TypeScript PreReq](#typescript-prereq)
+  - [Rust Registration](#rust-registration)
   - [🕖 Week-0](#-week-0)
     - [Prerequisites](#prerequisites)
     - [Customize Configuration](#customize-configuration)
     - [How to run](#how-to-run)
-  - [🕖 Week-1](#-week-1)
+  - [🕖 Week-1-Typescript](#-week-1-typescript)
     - [🔑 Key Concepts](#-key-concepts)
     - [🚀 Ship](#-ship)
-  - [🕖 Week-2](#-week-2)
+  - [🕖 Week-2-Anchor](#-week-2-anchor)
     - [🔑 Key Concepts](#-key-concepts-1)
     - [🚀 Ship](#-ship-1)
 
@@ -79,7 +79,7 @@ yarn
 yarn spl_init
 ```
 
-## 🕖 Week-1
+## 🕖 Week-1-Typescript
 
 ### 🔑 Key Concepts
 
@@ -120,8 +120,19 @@ yarn spl_init
 - [🦾 Challenge](challenges/rug-blinks/app/api/action/route.ts)
   - [README](challenges/rug-blinks/README.md)
 
-## 🕖 Week-2
+## 🕖 Week-2-Anchor
 
 ### 🔑 Key Concepts
 
+- **State**: represents the program's persistent data model, maintaining essential information for the program's operation.
+- **Account**: essential elements required for instructions to execute. Each instruction interacts with one or more accounts to perform its operations.
+- **PDA Account**:
+  - created deterministically using `seeds` and the `program ID`.
+  - owned by the program, allowing only the program to modify its state.
+  - enables cross-program invocation (CPI), allowing the program to sign transactions on behalf of the account without needing a private key.
+- **Instruction** : operations that define the logic for specific actions, such as `initialize()`, `upvote()`, and `downvote()`. They interact with accounts, manage parameters, and modify state securely.
+- **Context`<T>` parameters**: encapsulates all accounts and data needed for each instruction, as defined by the corresponding account structs.
+
 ### 🚀 Ship
+
+- [vote program](./anchor/vote-program/README.md)

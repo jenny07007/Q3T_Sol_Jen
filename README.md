@@ -135,4 +135,5 @@ yarn spl_init
 
 ### 🚀 Ship
 
-- [vote program](./anchor/vote-program/README.md)
+- [vote program](anchor/vote-program/README.md)
+- [vault program](anchor/vault/README.md)

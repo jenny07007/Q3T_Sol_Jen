@@ -7,8 +7,8 @@
 
 ### Links
 
-- **Dial Devnet Testing Platform**: [Dial.to](https://dial.to/devnet)
-- **Transaction Details**: [View on Solana Explorer](https://explorer.solana.com/tx/2LoSvbTTF7Ht6S4dVZGVBswCZvRfH1iagEPKBcFKDnXQ3gB5TjUaepcvtKP4nSxYGPoKkVDfd1XxToVsVGX2Nmv1?cluster=devnet)
+- **Dial Devnet Testing Platform**: [Dial.to/devnet](https://dial.to/devnet)
+- **Transaction Details**: [View on Solana Explorer](https://explorer.solana.com/tx/4DyNonwwWvEyXwwhUwwDQ8feE2xhrGQteaX72DjLW3xh7EoLgTdpJwbPa7iSwfDsqpy8mewKR6wc3sRvPJaSDtt6?cluster=devnet)
 
 <div align="center">
 	<img src="rug-blink.png" height="434px" alt="RUG NFT"/>

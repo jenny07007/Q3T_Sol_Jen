@@ -8,29 +8,17 @@ import {
   generateSigner,
   createNoopSigner,
   publicKey,
-  Instruction,
   transactionBuilder,
   sol,
 } from "@metaplex-foundation/umi";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
-import {
-  toWeb3JsInstruction,
-  toWeb3JsKeypair,
-} from "@metaplex-foundation/umi-web3js-adapters";
 import {
   ActionGetResponse,
   ActionPostRequest,
   ActionPostResponse,
   ACTIONS_CORS_HEADERS,
 } from "@solana/actions";
-import {
-  PublicKey,
-  LAMPORTS_PER_SOL,
-  TransactionInstruction,
-  TransactionMessage,
-  VersionedTransaction,
-  Keypair,
-} from "@solana/web3.js";
+import { PublicKey, LAMPORTS_PER_SOL, Keypair } from "@solana/web3.js";
 import dev_wallet from "../../../dev-wallet.json";
 import { transferSol, mplToolbox } from "@metaplex-foundation/mpl-toolbox";
 import { ErrorMessage } from "@/utils/verifyAmount";
@@ -114,6 +102,8 @@ export const POST = async (request: Request) => {
     // update uri if needed
     // const uri = uploadImageAndCreateMetadata();
 
+    // Create a tx builder for creating & mining the NFT
+    // Also transfering custom amount of SOL to the seller
     let txBuilder = transactionBuilder()
       .add(
         createNft(umi, {
@@ -132,28 +122,14 @@ export const POST = async (request: Request) => {
         }),
       );
 
-    const blockhash = (await umi.rpc.getLatestBlockhash()).blockhash;
+    // Sign and send the tx
+    const tx = await txBuilder.buildAndSign(umi);
+    console.log(tx.signatures);
 
-    // Convert Umi instructions to web3.js instructions
-    const nftMintInstructions: Instruction[] = txBuilder.getInstructions();
-    const web3JsInstructions: TransactionInstruction[] =
-      nftMintInstructions.map((ix) => toWeb3JsInstruction(ix));
-
-    // Create a VersionedTransaction using web3.js
-    const transactionMessage = new TransactionMessage({
-      payerKey: buyer,
-      recentBlockhash: blockhash,
-      instructions: web3JsInstructions,
-    }).compileToV0Message();
-
-    const versionedTx = new VersionedTransaction(transactionMessage);
-
-    // Sign the transaction with the mint keypair
-    const mintKeypair = toWeb3JsKeypair(mint);
-    versionedTx.sign([mintKeypair]);
+    const serializedTx = umi.transactions.serialize(tx);
 
     const payload: ActionPostResponse = {
-      transaction: Buffer.from(versionedTx.serialize()).toString("base64"),
+      transaction: Buffer.from(serializedTx).toString("base64"),
       message: `Thanks for your purchase! Your NFT will be minted shortly.`,
     };
 

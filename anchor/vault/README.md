@@ -2,7 +2,17 @@
 
 # Vault Program
 
-The [vault program](programs/vault/src/lib.rs) allows users to create, deposit to, withdraw from, and close a vault account. The vault stores native SOL tokens, and users can perform operations on their vault under certain conditions.
+The [vault program](programs/vault/src/lib.rs) enables users to manage their SOL deposits.
+
+- Create a vault account: This allows users to store their SOL tokens securely.
+
+- Deposit SOL tokens: Users can transfer SOL tokens to their vault account for safekeeping.
+
+- Withdraw SOL tokens: Users can retrieve their SOL tokens from the vault account after a locktime period.
+
+- Close the vault account: Users can close their vault account and reclaim their SOL tokens.
+
+The vault program introduces a locktime condition, ensuring that withdrawals and account closures respect this period. (For testing purposes, the locktime period is set to 10 seconds.)
 
 <div align="center">
 	<img src="vault.png" width="600">

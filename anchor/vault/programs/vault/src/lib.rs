@@ -1,12 +1,14 @@
 use anchor_lang::prelude::*;
 
 mod state;
-pub use state::*;
 
 mod contexts;
-pub use contexts::*;
+use contexts::*;
 
-declare_id!("5uE6P1W7wi7SfuzhXefiZfvn6N883fSzdGiqPTpnyqri");
+mod errors;
+mod utils;
+
+declare_id!("2aK43Qy3K9Lp5CaTJCZ4p76XLYM7bzyHHw74jXwpsaAe");
 
 #[program]
 pub mod vault {

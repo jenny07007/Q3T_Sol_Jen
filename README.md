@@ -3,8 +3,8 @@
 # WBA-Turbin3-SOLANA Cohort
 
 - [WBA-Turbin3-SOLANA Cohort](#wba-turbin3-solana-cohort)
-  - [TypeScript PreReq](#typescript-prereq)
-  - [Rust Registration](#rust-registration)
+    - [TypeScript PreReq](#typescript-prereq)
+    - [Rust Registration](#rust-registration)
   - [🕖 Week-0](#-week-0)
     - [Prerequisites](#prerequisites)
     - [Customize Configuration](#customize-configuration)
@@ -137,3 +137,4 @@ yarn spl_init
 
 - [vote program](anchor/vote-program/README.md)
 - [vault program](anchor/vault/README.md)
+- [escrow program](anchor/escrow/README.md)

@@ -101,6 +101,7 @@ impl<'info> Initialize<'info> {
             lp_bump,
             seed,
             fee,
+            locked: false,
         });
         Ok(())
     }

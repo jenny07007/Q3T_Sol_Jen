@@ -2,6 +2,8 @@ use anchor_lang::prelude::*;
 
 mod contexts;
 use contexts::*;
+mod errors;
+mod helpers;
 mod state;
 
 declare_id!("HPER28Xm16HLnodnbvWuJkvANeyPCWdiTR3Sphu5CbyJ");
@@ -23,5 +25,16 @@ pub mod amm {
         ctx.accounts.deposit(amount_x, true)?;
         ctx.accounts.deposit(amount_y, false)?;
         ctx.accounts.mint_lp(amount_x, amount_y)
+    }
+
+    // deposit liquidity to mint LP tokens
+    pub fn deposit(
+        ctx: Context<Deposit>,
+        amount: u64, // amount of LP token to claim
+        max_x: u64,  // max amount of X we are willing to deposit
+        max_y: u64,  // max amount of Y we are willing to deposit
+        expiration: i64,
+    ) -> Result<()> {
+        ctx.accounts.deposit(amount, max_x, max_y, expiration)
     }
 }

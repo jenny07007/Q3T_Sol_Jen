@@ -15,6 +15,9 @@
   - [🕖 Week-2-Anchor](#-week-2-anchor)
     - [🔑 Key Concepts](#-key-concepts-1)
     - [🚀 Ship](#-ship-1)
+  - [🕖 Week-3 NFT Staking](#-week-3-nft-staking)
+    - [🔑 Key Concepts](#-key-concepts-2)
+    - [🚀 Ship](#-ship-2)
 
 ### TypeScript PreReq
 
@@ -139,3 +142,16 @@ yarn spl_init
 - [vault program](anchor/vault/README.md)
 - [escrow program](anchor/escrow/README.md)
 - [amm](anchor/amm/README.md)
+
+## 🕖 Week-3 NFT Staking
+
+### 🔑 Key Concepts
+
+- **Delegation**: transfers authority over NFTs from the user to the program.
+- **FreezeDelegatedAccountCPI**: locks NFTs to prevent transfers while staked.
+- **ThawDelegatedAccountCPI**: unlocks NFTs during unstaking.
+- **Timestamp**: tracks when the NFT was last staked, used to calculate rewards and enforce freeze periods.
+
+### 🚀 Ship
+
+- [nft_staking](anchor/nft-staking/README.md)

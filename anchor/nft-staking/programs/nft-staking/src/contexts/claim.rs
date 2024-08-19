@@ -12,31 +12,31 @@ pub struct Claim<'info> {
     pub user: Signer<'info>,
 
     #[account(
-			mut,
-			seeds = [b"rewards_mint", config.key().as_ref()],
-			bump = config.reward_bump
-		)]
+        mut,
+        seeds = [b"rewards_mint", config.key().as_ref()],
+        bump = config.reward_bump
+    )]
     pub rewards_mint: InterfaceAccount<'info, Mint>,
 
     #[account(
-			init_if_needed,
-			payer = user,
-			associated_token::mint = rewards_mint,
-			associated_token::authority = user
-		)]
+        init_if_needed,
+        payer = user,
+        associated_token::mint = rewards_mint,
+        associated_token::authority = user
+    )]
     pub rewards_ata: InterfaceAccount<'info, TokenAccount>,
 
     #[account(
-			mut,
-			seeds = [b"user", user.key().as_ref()],
-			bump = user_account.bump
-		)]
+        mut,
+        seeds = [b"user", user.key().as_ref()],
+        bump = user_account.bump
+    )]
     pub user_account: Account<'info, UserAccount>,
 
     #[account(
-			seeds = [b"config", config.key().as_ref()],
-			bump = config.bump
-		)]
+        seeds = [b"config"],
+        bump = config.bump
+    )]
     pub config: Account<'info, StakeConfig>,
 
     pub associated_token_program: Program<'info, AssociatedToken>,
@@ -52,12 +52,12 @@ impl<'info> Claim<'info> {
             authority: self.config.to_account_info(),
         };
 
-        let seeds = [b"config".as_ref(), &[self.config.bump]];
+        let seeds = &[b"config".as_ref(), &[self.config.bump]];
 
         let signer_seeds = &[&seeds[..]];
 
         let cpi_ctx = CpiContext::new_with_signer(
-            self.system_program.to_account_info(),
+            self.token_program.to_account_info(),
             accounts,
             signer_seeds,
         );

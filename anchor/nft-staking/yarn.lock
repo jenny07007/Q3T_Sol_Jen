@@ -70,7 +70,207 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@noble/curves@npm:^1.4.2":
+"@metaplex-foundation/mpl-token-metadata@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@metaplex-foundation/mpl-token-metadata@npm:3.2.1"
+  dependencies:
+    "@metaplex-foundation/mpl-toolbox": "npm:^0.9.4"
+  peerDependencies:
+    "@metaplex-foundation/umi": ">= 0.8.2 < 1"
+  checksum: 10c0/6c64e99b12c43362dfad0f809b1754e0bd84680a51a007cf3439a8c5954c3ffb3d6e7130bdf5bcb0304985a8e60cf66cfd9e897ffb8a4f9953eb522b27fac473
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/mpl-toolbox@npm:^0.9.4":
+  version: 0.9.4
+  resolution: "@metaplex-foundation/mpl-toolbox@npm:0.9.4"
+  peerDependencies:
+    "@metaplex-foundation/umi": ">= 0.8.2 < 1"
+  checksum: 10c0/5036b0d941ada428cc199a3d8472bfc18473dd04cc9226c98971aa133e7d1cd619f4c5b25207f1b4470a1f0c5c108f2ef69404c808a5ee3bf4390fa88c47227d
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-bundle-defaults@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-bundle-defaults@npm:0.9.2"
+  dependencies:
+    "@metaplex-foundation/umi-downloader-http": "npm:^0.9.2"
+    "@metaplex-foundation/umi-eddsa-web3js": "npm:^0.9.2"
+    "@metaplex-foundation/umi-http-fetch": "npm:^0.9.2"
+    "@metaplex-foundation/umi-program-repository": "npm:^0.9.2"
+    "@metaplex-foundation/umi-rpc-chunk-get-accounts": "npm:^0.9.2"
+    "@metaplex-foundation/umi-rpc-web3js": "npm:^0.9.2"
+    "@metaplex-foundation/umi-serializer-data-view": "npm:^0.9.2"
+    "@metaplex-foundation/umi-transaction-factory-web3js": "npm:^0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+    "@solana/web3.js": ^1.72.0
+  checksum: 10c0/a78dabe6c2393199356ddd3c8f221920abba0674472bd71d136e7fde90c76f28cfd29534a531c1773a987691b81a9dc69835d7f22cad091736e9300055156101
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-downloader-http@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-downloader-http@npm:0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+  checksum: 10c0/1ae66882f871ca1214d5e42e43391f7fc6f665e2a0e83c3c471f9d5e6328e7ac67d50f9dbe51334ab56309339a20ecce4b4b0a0580d4780a954be5ecd756500c
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-eddsa-web3js@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-eddsa-web3js@npm:0.9.2"
+  dependencies:
+    "@metaplex-foundation/umi-web3js-adapters": "npm:^0.9.2"
+    "@noble/curves": "npm:^1.0.0"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+    "@solana/web3.js": ^1.72.0
+  checksum: 10c0/623fb5d65aa28b394701b9415f2c8d4a4089df4c4d15d19cb2af97fc633c1aaa811696c6a67ef64226eefdbdeb06579812bcf1288bb6731745cb91b4d6ad701f
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-http-fetch@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-http-fetch@npm:0.9.2"
+  dependencies:
+    node-fetch: "npm:^2.6.7"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+  checksum: 10c0/0d608bdeacb07eeac4af607950ff2a6e21fd94a98e6eda6d76d8e7f71b970373cba92cb10bec969f8dcc7c14d561f837e99c7e33b9c83f168624d1f9c37c68ca
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-options@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-options@npm:0.8.9"
+  checksum: 10c0/da0bcec5188ab5638ee4bbdbba22236b69f5e89f33bf279ef9ea584d5e5ed428ab6a7cddcc73d29b8bf1e8ea840d641b509e01b9778b470baded5ab30d18cc3d
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-program-repository@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-program-repository@npm:0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+  checksum: 10c0/14ded229854f84b4a30d810171ea35a5576291fa881ae7534dff6b281b1098fd7952ed1616452b37e0f5a73a0c23353d6226ad2f4df5d808dcb7853d25a108b2
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-public-keys@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-public-keys@npm:0.8.9"
+  dependencies:
+    "@metaplex-foundation/umi-serializers-encodings": "npm:^0.8.9"
+  checksum: 10c0/961281b83cb6b60eb7872fb6c818798ee3b81b5457fb5c31c9b96bc73010d77e12d9952659f7d16d0352eb219ac7644d59d1147f27817d8c46722ea6bad23d83
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-rpc-chunk-get-accounts@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-rpc-chunk-get-accounts@npm:0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+  checksum: 10c0/ca86434df4fe1a224f4dcc2b4c7e0b5982f5ab1aa69312e6a35a83f739eb4e914ff09454271a981577ae6d79fd12921a50493835c9d48e4483d3e986400498c7
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-rpc-web3js@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-rpc-web3js@npm:0.9.2"
+  dependencies:
+    "@metaplex-foundation/umi-web3js-adapters": "npm:^0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+    "@solana/web3.js": ^1.72.0
+  checksum: 10c0/55d6b4a3c486e9e980cb5d263e6326c9edf4aafd05da1c2746c5af445140fa0ef354823c48b09a687bbd915323171287ad3b4fd861b7779c7628936fba9b8334
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializer-data-view@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-serializer-data-view@npm:0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+  checksum: 10c0/2e1d9ecf65052f8ef3f6c1e0dfa1ea1ced9d98b11b6b1314576a142d012408eed158756f05e277ef09319d25ff6c650cb00713421acc33d691edfcbfdf449795
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers-core@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-serializers-core@npm:0.8.9"
+  checksum: 10c0/b169b62b55b6fe7f529c94c8387e9bea25c66a7e9c66bc38027fc89d230f267192f0002a16a663a07dff787d3160424c26d090243edda0aefaaf7f0d874b9adb
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers-encodings@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-serializers-encodings@npm:0.8.9"
+  dependencies:
+    "@metaplex-foundation/umi-serializers-core": "npm:^0.8.9"
+  checksum: 10c0/13bd3a58278284d640b941d26580c86e9bc52390dfc6ee145c3934cd50bf65b42838812f2c4d7adfc1aa93be5c5d3293dcabec2d170ed80406941fa252f0a3d9
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers-numbers@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-serializers-numbers@npm:0.8.9"
+  dependencies:
+    "@metaplex-foundation/umi-serializers-core": "npm:^0.8.9"
+  checksum: 10c0/3dcea7c90ab5c97e631a20d1a73f7fec7f5767200187b79ea6c1ee9763f17ae14cb66f401409662e83f406e7c40b980db62c87506711b95c3be67dd52ab1d2bb
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@metaplex-foundation/umi-serializers@npm:0.9.0"
+  dependencies:
+    "@metaplex-foundation/umi-options": "npm:^0.8.9"
+    "@metaplex-foundation/umi-public-keys": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers-core": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers-encodings": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers-numbers": "npm:^0.8.9"
+  checksum: 10c0/8f8f93e23666aac4cf1ed8fc5eecb726c9865f526535e379ae599c8b295dd78fe4e325d9efdcd545a85c0f3bdff39896d93b33c8087db962cc10a156b03a29d6
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-transaction-factory-web3js@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-transaction-factory-web3js@npm:0.9.2"
+  dependencies:
+    "@metaplex-foundation/umi-web3js-adapters": "npm:^0.9.2"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+    "@solana/web3.js": ^1.72.0
+  checksum: 10c0/9f6c11a2e68fa4919ba5376d8e27c4c79bb754cb9c375456d774be7caad821a7421d551e1183b52c12610e9d87adcbcbd3e65f3c5a5bf8a535e2ef06b9e874af
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-web3js-adapters@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi-web3js-adapters@npm:0.9.2"
+  dependencies:
+    buffer: "npm:^6.0.3"
+  peerDependencies:
+    "@metaplex-foundation/umi": ^0.9.2
+    "@solana/web3.js": ^1.72.0
+  checksum: 10c0/fa3ea589621411c38f5c7e6114dd6e1eac797644fa1d7288bd40af467fc50e7e46d80317c7f13d5dfdd1d1ac062794cf445c3158e8ee362094ab02f19a493323
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi@npm:0.9.2"
+  dependencies:
+    "@metaplex-foundation/umi-options": "npm:^0.8.9"
+    "@metaplex-foundation/umi-public-keys": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers": "npm:^0.9.0"
+  checksum: 10c0/babe76abba8dc8da9e12441dc1624db418b044943e6a4a91c75b6efba58fa6d963940172c5686e25604d8c546eb12024f501856176d23025240de1864cb38b05
+  languageName: node
+  linkType: hard
+
+"@noble/curves@npm:^1.0.0, @noble/curves@npm:^1.4.2":
   version: 1.5.0
   resolution: "@noble/curves@npm:1.5.0"
   dependencies:
@@ -115,7 +315,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solana/buffer-layout@npm:^4.0.1":
+"@solana/buffer-layout-utils@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@solana/buffer-layout-utils@npm:0.2.0"
+  dependencies:
+    "@solana/buffer-layout": "npm:^4.0.0"
+    "@solana/web3.js": "npm:^1.32.0"
+    bigint-buffer: "npm:^1.1.5"
+    bignumber.js: "npm:^9.0.1"
+  checksum: 10c0/ed093999d7c0f93527a9b261a9a2a59e10b5ef78fc416fa896b86036fb4dadf923d17db68bffdc3e91eadecdb8b8cddd8ee37f12429980fcaba321e7b8a35d27
+  languageName: node
+  linkType: hard
+
+"@solana/buffer-layout@npm:^4.0.0, @solana/buffer-layout@npm:^4.0.1":
   version: 4.0.1
   resolution: "@solana/buffer-layout@npm:4.0.1"
   dependencies:
@@ -124,7 +336,227 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solana/web3.js@npm:^1.68.0":
+"@solana/codecs-core@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/codecs-core@npm:2.0.0-preview.2"
+  dependencies:
+    "@solana/errors": "npm:2.0.0-preview.2"
+  checksum: 10c0/545340b797bbf5bfbc79c2ca66aa87265b04632e3abd4ec042b7e8e92ed5738726c75a8c8dffd3ea6c793b4f8cd0c74caac72fb41a49a17132f2bb194ab8722f
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-core@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/codecs-core@npm:2.0.0-preview.4"
+  dependencies:
+    "@solana/errors": "npm:2.0.0-preview.4"
+  peerDependencies:
+    typescript: ">=5"
+  checksum: 10c0/fe6d52cec3b747a8ecf752675b57e7f01c5c1d6287d0ec339b49979afba0c37f6c357f4b0b75edb9a6f7876134ba8c1eb77daa3df5b3cdfc938fdebde5d98278
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-data-structures@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/codecs-data-structures@npm:2.0.0-preview.2"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.2"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.2"
+    "@solana/errors": "npm:2.0.0-preview.2"
+  checksum: 10c0/b06e1cef79305ef3328db7a641e9f8303611e173d99b47ad0934f6793d69fa876e274c9b91373c00c80166fbec74fb3439d6198c8461a6b174e0b808391825bd
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-data-structures@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/codecs-data-structures@npm:2.0.0-preview.4"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.4"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.4"
+    "@solana/errors": "npm:2.0.0-preview.4"
+  peerDependencies:
+    typescript: ">=5"
+  checksum: 10c0/9274fbfe029654e6f3cf43a8e82c575c6fab406f6db6b77ee443a2288abf730c4c3c2defd479f9fc4e3d0b9a4334018ba821b4bddcd546586f99e4f778004c33
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-numbers@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/codecs-numbers@npm:2.0.0-preview.2"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.2"
+    "@solana/errors": "npm:2.0.0-preview.2"
+  checksum: 10c0/8a2275085dd25ff106ba20d42f7769648ef3efcff5516725a69af08c48c99c2a9224de9b4a0d1ccf51bb463fc48a54b6b82853d4d8a31ba21648a2daff56c373
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-numbers@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/codecs-numbers@npm:2.0.0-preview.4"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.4"
+    "@solana/errors": "npm:2.0.0-preview.4"
+  peerDependencies:
+    typescript: ">=5"
+  checksum: 10c0/02ea792e055f6c798ca140d00d429e0ae6d37b9b42ff3ad950dba98666e18324eeaabd13cdcc584c64a21b10ef3706aaeb23691ba53520dba462fbc071bd63aa
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-strings@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/codecs-strings@npm:2.0.0-preview.2"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.2"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.2"
+    "@solana/errors": "npm:2.0.0-preview.2"
+  peerDependencies:
+    fastestsmallesttextencoderdecoder: ^1.0.22
+  checksum: 10c0/76f741de87bb8b95912467981fe3263d10cc12c3ba66f31d60c28474de57170b7ba0d0f1f6ee9ce6902a137433787a6fc72395ce451a08809207e4d85a621729
+  languageName: node
+  linkType: hard
+
+"@solana/codecs-strings@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/codecs-strings@npm:2.0.0-preview.4"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.4"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.4"
+    "@solana/errors": "npm:2.0.0-preview.4"
+  peerDependencies:
+    fastestsmallesttextencoderdecoder: ^1.0.22
+    typescript: ">=5"
+  checksum: 10c0/c1db4d3d2989390461ddf5ae3a08ac25b2b520290565b46469db1fade0600aea4adf501f3c683ef46baabc25cdd9f4e857b267e0cde91f6de4417efc9b0b9ce3
+  languageName: node
+  linkType: hard
+
+"@solana/codecs@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/codecs@npm:2.0.0-preview.2"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.2"
+    "@solana/codecs-data-structures": "npm:2.0.0-preview.2"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.2"
+    "@solana/codecs-strings": "npm:2.0.0-preview.2"
+    "@solana/options": "npm:2.0.0-preview.2"
+  checksum: 10c0/50f8177c042b1a34c83b66ecd0ff67cb0713dc3c4fbac6988d14224ee784d25d626a791eec74a77b60a83be0b5b708832c09067bcee9bad2eede19a0b77c6a82
+  languageName: node
+  linkType: hard
+
+"@solana/codecs@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/codecs@npm:2.0.0-preview.4"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.4"
+    "@solana/codecs-data-structures": "npm:2.0.0-preview.4"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.4"
+    "@solana/codecs-strings": "npm:2.0.0-preview.4"
+    "@solana/options": "npm:2.0.0-preview.4"
+  peerDependencies:
+    typescript: ">=5"
+  checksum: 10c0/49a736614a6a4b9747cd040bd61537cbdd58940ed4cdb509d601a1dd05f33f6407bc7d3d8b894962b4a47c59df561098ce50cf2303620b7bc69fe458266ea5c7
+  languageName: node
+  linkType: hard
+
+"@solana/errors@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/errors@npm:2.0.0-preview.2"
+  dependencies:
+    chalk: "npm:^5.3.0"
+    commander: "npm:^12.0.0"
+  bin:
+    errors: bin/cli.js
+  checksum: 10c0/5f71ef1306e3c4c858854e5b29750c200c0e49bb9a3e4e2633dd9daa40dc92a940e39e23423b936b110e2bdca092fac546983cde9145a1ad97601ac4d4fdb211
+  languageName: node
+  linkType: hard
+
+"@solana/errors@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/errors@npm:2.0.0-preview.4"
+  dependencies:
+    chalk: "npm:^5.3.0"
+    commander: "npm:^12.1.0"
+  peerDependencies:
+    typescript: ">=5"
+  bin:
+    errors: bin/cli.mjs
+  checksum: 10c0/457a4e35a8a28c1ad7fc75cf1fde6159b920cebce9c6c46af54b001ccecae9c1f366703de9cad238e784a2b76ae180f0b7c9c63d2f7c972d67cd8165960fdae9
+  languageName: node
+  linkType: hard
+
+"@solana/options@npm:2.0.0-preview.2":
+  version: 2.0.0-preview.2
+  resolution: "@solana/options@npm:2.0.0-preview.2"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.2"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.2"
+  checksum: 10c0/e749161b042145d826d6bc1874e37b2fda725e737dd010c696fe1d7300a93eb48a80c2d2376361cd658ee04b4398194fdfa16e858c39ad737337491a8a71e095
+  languageName: node
+  linkType: hard
+
+"@solana/options@npm:2.0.0-preview.4":
+  version: 2.0.0-preview.4
+  resolution: "@solana/options@npm:2.0.0-preview.4"
+  dependencies:
+    "@solana/codecs-core": "npm:2.0.0-preview.4"
+    "@solana/codecs-data-structures": "npm:2.0.0-preview.4"
+    "@solana/codecs-numbers": "npm:2.0.0-preview.4"
+    "@solana/codecs-strings": "npm:2.0.0-preview.4"
+    "@solana/errors": "npm:2.0.0-preview.4"
+  peerDependencies:
+    typescript: ">=5"
+  checksum: 10c0/c2b802ee449af09231ad38fff48f21c7dd8bc747415451575c8fded3d91c58cafac61829d3d215d19423e212235ab3ad98efeb96bcfbe3587e3181ccd389cd81
+  languageName: node
+  linkType: hard
+
+"@solana/spl-token-group@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@solana/spl-token-group@npm:0.0.5"
+  dependencies:
+    "@solana/codecs": "npm:2.0.0-preview.4"
+    "@solana/spl-type-length-value": "npm:0.1.0"
+  peerDependencies:
+    "@solana/web3.js": ^1.94.0
+  checksum: 10c0/f7140e21165c24f8ab5d7d74138c5d776b96f1f56f0652e641bb94aac2c4f4ba2f7b48c74fe754f962c27a652ecdf6e0be12491ace99116859330a71454b653b
+  languageName: node
+  linkType: hard
+
+"@solana/spl-token-metadata@npm:^0.1.3":
+  version: 0.1.4
+  resolution: "@solana/spl-token-metadata@npm:0.1.4"
+  dependencies:
+    "@solana/codecs": "npm:2.0.0-preview.2"
+    "@solana/spl-type-length-value": "npm:0.1.0"
+  peerDependencies:
+    "@solana/web3.js": ^1.91.6
+  checksum: 10c0/d2f27b944e26bff2353c362aee0b61b2d030d4df02332898e96d109c2408721e4c652f30dfe1b77a2f6ec72112137e5c79fcda55ec92405d8ead9aa23159a623
+  languageName: node
+  linkType: hard
+
+"@solana/spl-token@npm:^0.4.8":
+  version: 0.4.8
+  resolution: "@solana/spl-token@npm:0.4.8"
+  dependencies:
+    "@solana/buffer-layout": "npm:^4.0.0"
+    "@solana/buffer-layout-utils": "npm:^0.2.0"
+    "@solana/spl-token-group": "npm:^0.0.5"
+    "@solana/spl-token-metadata": "npm:^0.1.3"
+    buffer: "npm:^6.0.3"
+  peerDependencies:
+    "@solana/web3.js": ^1.94.0
+  checksum: 10c0/6570a439d93544b9822fc67fd94b443a465ddd2be9683937fe67deea6a71b72c04b80da5a895abfbb2e276dac83ae0401c990e7a4fdf7cf01168288b7345da55
+  languageName: node
+  linkType: hard
+
+"@solana/spl-type-length-value@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@solana/spl-type-length-value@npm:0.1.0"
+  dependencies:
+    buffer: "npm:^6.0.3"
+  checksum: 10c0/a8f2fd6308dffa27827799146857a778ff807380578e187023f8fe90ebf8a68ed1f9f74a0c196cde7b757ea188ff2af040a727c18bb3c86a82f62fe3ec4c43bb
+  languageName: node
+  linkType: hard
+
+"@solana/web3.js@npm:^1.32.0, @solana/web3.js@npm:^1.68.0":
   version: 1.95.2
   resolution: "@solana/web3.js@npm:1.95.2"
   dependencies:
@@ -391,6 +823,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:^9.0.1":
+  version: 9.1.2
+  resolution: "bignumber.js@npm:9.1.2"
+  checksum: 10c0/e17786545433f3110b868725c449fa9625366a6e675cd70eb39b60938d6adbd0158cb4b3ad4f306ce817165d37e63f4aa3098ba4110db1d9a3b9f66abfbaf10d
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.3.0
   resolution: "binary-extensions@npm:2.3.0"
@@ -555,6 +994,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "chalk@npm:5.3.0"
+  checksum: 10c0/8297d436b2c0f95801103ff2ef67268d362021b8210daf8ddbe349695333eb3610a71122172ff3b0272f1ef2cf7cc2c41fdaa4715f52e49ffe04c56340feed09
+  languageName: node
+  linkType: hard
+
 "check-error@npm:^1.0.3":
   version: 1.0.3
   resolution: "check-error@npm:1.0.3"
@@ -621,6 +1067,13 @@ __metadata:
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: 10c0/a1a3f914156960902f46f7f56bc62effc6c94e84b2cae157a526b1c1f74b677a47ec602bf68a61abfa2b42d15b7c5651c6dbe72a43af720bc588dff885b10f95
+  languageName: node
+  linkType: hard
+
+"commander@npm:^12.0.0, commander@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "commander@npm:12.1.0"
+  checksum: 10c0/6e1996680c083b3b897bfc1cfe1c58dfbcd9842fd43e1aaf8a795fbc237f65efcc860a3ef457b318e73f29a4f4a28f6403c3d653d021d960e4632dd45bde54a9
   languageName: node
   linkType: hard
 
@@ -1555,7 +2008,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.12, node-fetch@npm:^2.7.0":
+"node-fetch@npm:^2.6.12, node-fetch@npm:^2.6.7, node-fetch@npm:^2.7.0":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -1783,6 +2236,10 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@coral-xyz/anchor": "npm:^0.30.1"
+    "@metaplex-foundation/mpl-token-metadata": "npm:^3.2.1"
+    "@metaplex-foundation/umi": "npm:^0.9.2"
+    "@metaplex-foundation/umi-bundle-defaults": "npm:^0.9.2"
+    "@solana/spl-token": "npm:^0.4.8"
     "@types/bn.js": "npm:^5.1.0"
     "@types/chai": "npm:^4.3.0"
     "@types/mocha": "npm:^9.0.0"

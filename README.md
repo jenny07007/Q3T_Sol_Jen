@@ -18,6 +18,8 @@
   - [🕖 Week-3 NFT Staking](#-week-3-nft-staking)
     - [🔑 Key Concepts](#-key-concepts-2)
     - [🚀 Ship](#-ship-2)
+  - [🕖 Week-4](#-week-4)
+    - [🚀 Ship](#-ship-3)
 
 ### TypeScript PreReq
 
@@ -155,3 +157,11 @@ yarn spl_init
 ### 🚀 Ship
 
 - [nft_staking](anchor/nft-staking/README.md)
+- [workshop metaplex_core_staking](anchor/metaplex-core-staking/README.md)
+
+## 🕖 Week-4
+
+### 🚀 Ship
+
+- [marketplace](anchor/marketplace/README.md)
+- [capstone](capstone/README.md)

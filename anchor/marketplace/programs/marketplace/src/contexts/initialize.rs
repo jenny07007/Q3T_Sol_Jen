@@ -18,19 +18,19 @@ pub struct Initialize<'info> {
     pub marketplace: Account<'info, Marketplace>,
 
     #[account(
-			init,
-			seeds = [b"rewards_mint", marketplace.key().as_ref()],
-			bump,
-			payer = admin,
-			mint::decimals = 6,
-			mint::authority = marketplace
-		)]
+        init,
+        seeds = [b"rewards_mint", marketplace.key().as_ref()],
+        bump,
+        payer = admin,
+        mint::decimals = 6,
+        mint::authority = marketplace
+    )]
     pub rewards_mint: InterfaceAccount<'info, Mint>,
 
     #[account(
-			seeds = [b"treasury", marketplace.key().as_ref()],
-			bump
-		)]
+        seeds = [b"treasury", marketplace.key().as_ref()],
+        bump
+    )]
     pub treasury: SystemAccount<'info>,
     pub token_program: Interface<'info, TokenInterface>,
     pub system_program: Program<'info, System>,

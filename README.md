@@ -164,4 +164,4 @@ yarn spl_init
 ### 🚀 Ship
 
 - [marketplace](anchor/marketplace/README.md)
-- [capstone](capstone/README.md)
+- [capstone](https://github.com/jenny07007/capstone)
